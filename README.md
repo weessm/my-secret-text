@@ -8,10 +8,14 @@ Uma ferramenta simples e eficiente para mensagens codificadas. Este projeto foi 
 - **Interface Intuitiva:** Navegue por uma interface limpa e intuitiva, projetada para ser direto ao ponto.
 - **Restrição:** Aceita apenas letras minúsculas sem acentos nem caracteres especiais.
 
+## Acesso
+
+Confira a aplicação [aqui](https://weessm.github.io/my-secret-text/).
+
 ## Como Usar
 
 <ol>
-  <li>Acesse o <a href="#inserir_link_do_site">My S*cr*t Text</a>.</li>
+  <li>Acesse o <a href="https://weessm.github.io/my-secret-text/">My S*cr*t Text</a>.</li>
   <li>Insira o texto na caixa de entrada.</li>
   <li>Clique no botão 'Criptografar' ou 'Descriptografar' e veja a mágica acontecer!</li>
 </ol>
