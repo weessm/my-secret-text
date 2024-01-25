@@ -3,6 +3,7 @@
 /* DEFINIÇÕES */
 :root {
   --color-l-bg-and-contrast: #FFFFFF;
+  --color-l-bg-inative-edit: #EDEDED;
   --color-l-primary: #110F0F;
   --color-l-secondary: #008CDB;
   --color-l-secondary-hover: #4DBEFF;
@@ -18,6 +19,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  box-sizing: border-box;
   font-family: 'Quantico', sans-serif;
 }
 
@@ -29,25 +31,48 @@ body {
 
 .header, .main, .footer {
   padding: 1.5rem;
-  box-sizing: border-box;
 }
 
 /* HEADER */
 .header {
-  background-color: coral;
+  display: flex;
+  border-bottom: 1px solid var(--color-l-primary); /* REMOVER */
   height: 7rem;
+}
+
+.header__link {
+  margin: 0.725% 5%;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  width: 4rem;
+}
+
+.header__link__img {
+  width: 100%;
+}
+
+.header__link__logoname {
+  color: var(--color-l-secondary);
+  font-family: 'Press Start 2P', 'Quantico', sans-serif;
+  line-height: 2rem;
+  font-size: var(--font-size-primary);
 }
 
 
 /* MAIN */
 .main {
   min-height: calc(100vh - 10rem);
-  background-color: yellowgreen;
 }
 
 
 /* FOOTER */
 .footer {
-  background-color: brown;
+  font-size: var(--font-size-secondary);
+  border-top: 1px solid var(--color-l-primary); /* REMOVER */
+  line-height: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 3rem;
 }
