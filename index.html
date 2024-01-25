@@ -20,7 +20,37 @@
 		</header>
 
 		<main class="main">
-			Conteudo
+			<div class="container">
+				<div class="main__input">
+					<textarea
+						id="main__input__text"
+						placeholder="Digite seu texto aqui"
+						spellcheck="false"
+					></textarea>
+
+					<div class="main__input__warning">
+						<div id="main__input__warning__icon" title="não é permitido acentuação, cedilha ou outros caracteres especiais, apenas letras minúsculas">!</div>
+						<p id="main__input__warning__text">
+							Letras minúsculas e sem símbolos
+						</p>
+					</div>
+
+					<div class="main__input__buttons">
+						<button onclick="handleEncrypt()">Criptografar</button>
+						<button onclick="handleDecrypt()">Descriptografar</button>
+					</div>
+				</div>
+
+				<div class="main__output">
+					<textarea
+						readonly
+						id="main__output__text"
+						placeholder="Não há nada aqui ainda"
+						spellcheck="false"
+					></textarea>
+					<button id="copy-button-output" onclick="handleCopyOutput()">Copiar</button>
+				</div>
+			</div>
 		</main>
 
 		<footer class="footer">
