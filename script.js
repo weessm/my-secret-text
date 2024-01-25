@@ -51,8 +51,8 @@ const action = {
     let sendField = document.getElementById('main__input__text').value;
     let receiveField = document.getElementById('main__output__text');
 
-    if (action.checkText(sendField)) {
-      receiveField.innerHTML = operation(sendField);
+    if (action.checkText(sendField.trim())) {
+      receiveField.innerHTML = operation(sendField.trim());
     }
   },
 
@@ -61,6 +61,23 @@ const action = {
     text.select();
     text.setSelectionRange(0, 99999);
 
-    navigator.clipboard.writeText(text.value);
+    if(text.value != '') {
+      navigator.clipboard.writeText(text.value);
+      notification.copy('copy-button-output');
+    }
+  },
+}
+
+const notification = {
+  copy: (buttonId) => {
+    let copyButton = document.getElementById(buttonId);
+
+    copyButton.style.backgroundColor = '#90EE90';
+    copyButton.innerHTML = 'Copiado';
+
+    setTimeout(function() {
+      copyButton.style.backgroundColor = '#008CDB';
+      copyButton.innerHTML = 'Copiar';
+    }, 500);
   },
 }
