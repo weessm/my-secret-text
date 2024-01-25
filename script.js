@@ -44,7 +44,7 @@ const action = {
   checkText: (text) => {
     const regex = /^[a-z\s]+$/;
 
-    return regex.test(text)
+    return regex.test(text);
   },
 
   decodeText: (operation) => {
@@ -53,6 +53,8 @@ const action = {
 
     if (action.checkText(sendField.trim())) {
       receiveField.innerHTML = operation(sendField.trim());
+    } else {
+      notification.invalidDecode();
     }
   },
 
@@ -79,5 +81,27 @@ const notification = {
       copyButton.style.backgroundColor = '#008CDB';
       copyButton.innerHTML = 'Copiar';
     }, 500);
+  },
+
+  invalidDecode: () => {
+    let notifyField = document.getElementById('main__input__warning__text');
+    let notifyIcon = document.getElementById('main__input__warning__icon');
+    let count = 0;
+
+    const interval = setInterval(() => {
+      if(count % 2 === 0) {
+        notifyField.style.color = '#FF0000';
+        notifyIcon.style.backgroundColor = '#FF0000';
+      } else {
+        notifyField.style.color = 'transparent';
+        notifyIcon.style.backgroundColor = 'transparent';
+      }
+
+      if (++count === 20) {
+        clearInterval(interval);
+        notifyField.style.color = '#110F0F';
+        notifyIcon.style.backgroundColor = '#008CDB';
+      }
+    }, 100);
   },
 }

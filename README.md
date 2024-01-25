@@ -4,8 +4,9 @@ Uma ferramenta simples e eficiente para mensagens codificadas. Este projeto foi 
 
 ## Funcionalidades
 
-- **Decodificação Simples:** É possível criptografar e descriptografar mensagens de maneira rápida e fácil.
+- **Decodificação Simples:** É possível converter uma palavra para a versão criptografada e retornar para a versão original de maneira rápida e fácil.
 - **Interface Intuitiva:** Navegue por uma interface limpa e intuitiva, projetada para ser direto ao ponto.
+- **Restrição:** Aceita apenas letras minúsculas sem acentos nem caracteres especiais.
 
 ## Como Usar
 
