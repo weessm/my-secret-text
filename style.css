@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quantico:wght@400;700&display=swap');
+
+/* DEFINIÇÕES */
+:root {
+  --color-l-bg-and-contrast: #FFFFFF;
+  --color-l-primary: #110F0F;
+  --color-l-secondary: #008CDB;
+  --color-l-secondary-hover: #4DBEFF;
+  --color-l-alternative: #C8C8C8;
+
+  --font-size-primary: 1.25rem;
+  --font-size-secondary: 0.875rem;
+  --font-size-alternative: 0.75rem;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Quantico', sans-serif;
+}
+
+/* GERAL */
+body {
+  color: var(--color-l-primary);
+  background-color: var(--color-l-bg-and-contrast);
+}
+
+.header, .main, .footer {
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+  background-color: coral;
+  height: 7rem;
+}
+
+
+/* MAIN */
+.main {
+  min-height: calc(100vh - 10rem);
+  background-color: yellowgreen;
+}
+
+
+/* FOOTER */
+.footer {
+  background-color: brown;
+  height: 3rem;
+}
