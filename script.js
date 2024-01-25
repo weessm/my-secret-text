@@ -6,6 +6,10 @@ handleDecrypt = () => {
   action.decodeText(action.decryptText);
 }
 
+handleCopyOutput = () => {
+  action.copyText('main__output__text');
+}
+
 const action = {
   encryptText: (text) => {
     const encryptKey = {
@@ -50,5 +54,13 @@ const action = {
     if (action.checkText(sendField)) {
       receiveField.innerHTML = operation(sendField);
     }
+  },
+
+  copyText: (fieldId) => {
+    let text = document.getElementById(fieldId);
+    text.select();
+    text.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(text.value);
   },
 }
