@@ -1,6 +1,6 @@
 <h1>My S*cr*t Text</h1>
 
-Uma ferramenta simples e eficiente para mensagens codificadas. Este projeto foi desenvolvido para o Chanllenge ONE (Oracle Next Education).
+Uma ferramenta simples e eficiente para mensagens codificadas. Este projeto foi desenvolvido para o Challenge ONE (Oracle Next Education).
 
 ## Funcionalidades
 
