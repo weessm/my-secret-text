@@ -9,7 +9,7 @@
   --color-l-secondary-hover: #4DBEFF;
   --color-l-alternative: #C8C8C8;
 
-  --font-size-primary: 1.25rem;
+  --font-size-primary: 1.3rem;
   --font-size-secondary: 0.875rem;
   --font-size-alternative: 0.75rem;
 
@@ -59,12 +59,13 @@ strong:hover {
 
 .header, .main, .footer {
   padding: 1.5rem;
+  box-sizing: border-box;
 }
 
 /* HEADER */
 .header {
   display: flex;
-  height: 7rem;
+  height: 5rem;
 }
 
 .header__link {
@@ -72,24 +73,24 @@ strong:hover {
   display: flex;
   gap: 0.75rem;
   align-items: center;
-  width: 4rem;
+  width: 3.5rem;
 }
 
 .header__link__img {
-  width: 100%;
+  width: 80%;
 }
 
 .header__link__logoname {
   color: var(--color-l-secondary);
   font-family: 'Press Start 2P', 'Quantico', sans-serif;
-  line-height: 2rem;
+  line-height: 1.5rem;
   font-size: var(--font-size-primary);
 }
 
 
 /* MAIN */
 .main {
-  min-height: calc(100vh - 10rem);
+  min-height: calc(100vh - 8rem);
 }
 
 .container {
@@ -104,7 +105,7 @@ strong:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .main__input {
