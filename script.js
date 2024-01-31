@@ -22,7 +22,16 @@ handleClearOutput = () => {
   action.clearText('textarea__output');
 }
 
+handleConvertToValidText = () => {
+  action.convertToValidText('textarea__input');
+}
+
 const action = {
+  convertToValidText: (fieldId) => {
+    let textarea = document.getElementById(fieldId);
+    textarea.value = textarea.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f\u005F]/g, '').replace(/[^\w\s]/g, '');
+  },
+
   encryptText: (text) => {
     const encryptKey = {
       'e': 'enter',
@@ -83,7 +92,12 @@ const action = {
 
   clearText: (fieldId) => {
     const textarea = document.getElementById(fieldId);
+
     textarea.value = '';
+
+    if(textarea.id.includes('input')) {
+      textarea.focus();
+    }
   },
 }
 

@@ -6,7 +6,7 @@ Uma ferramenta simples e eficiente para decodificar mensagens. Este projeto foi 
 
 - **Decodificação Simples:** É possível converter uma palavra para a versão criptografada e retornar para a versão original de maneira rápida e fácil.
 - **Interface Intuitiva:** Navegue por uma interface limpa e intuitiva, projetada para ser direto ao ponto.
-- **Restrição:** Aceita apenas letras minúsculas sem acentos nem caracteres especiais.
+- **Restrição Inteligente:** Aceita apenas letras minúsculas, qualquer caractere não aceito é convertido automaticamente, letras acentuadas perdem acentuação, caracteres especiais são automaticamente removidos, letras maiúsculas são convertidas para minúsculas.
 
 ## Acesso
 
