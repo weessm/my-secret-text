@@ -1,6 +1,6 @@
 <h1>My S*cr*t Text</h1>
 
-Uma ferramenta simples e eficiente para mensagens codificadas. Este projeto foi desenvolvido para o Challenge ONE (Oracle Next Education).
+Uma ferramenta simples e eficiente para decodificar mensagens. Este projeto foi desenvolvido para o Challenge ONE (Oracle Next Education).
 
 ## Funcionalidades
 
@@ -22,6 +22,6 @@ Confira a aplicação [aqui](https://weessm.github.io/my-secret-text/).
 
 ## Tecnologias Utilizadas
 
-![HTML](https://img.shields.io/badge/HTML-5-orange?style=flat-square&logo=html5)
-![CSS](https://img.shields.io/badge/CSS-3-blue?style=flat-square&logo=css3)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=flat-square&logo=javascript)
+![HTML](https://img.shields.io/badge/HTML-5-orange?style=flat-square&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-blue?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=flat-square&logo=javascript&logoColor=white)

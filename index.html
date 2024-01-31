@@ -1,71 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="shortcut icon" type="imagex/png" href="./assets/icon.svg" />
-		<title>My S*cr*t Text</title>
-	</head>
-	<body>
-		<header class="header">
-			<a class="header__link" href="index.html">
-				<img
-					class="header__link__img"
-					src="./assets/icon.svg"
-					alt="logo do My Secret Text"
-				/>
-				<p class="header__link__logoname">My S*cr*t Text</p>
-			</a>
-		</header>
 
-		<main class="main">
-			<div class="container">
-				<div class="main__input">
-					<textarea
-						id="main__input__text"
-						placeholder="Digite seu texto aqui"
-						spellcheck="false"
-					></textarea>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Uma ferramenta simples e eficiente para decodificar mensagens.">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="shortcut icon" href="./assets/icon.svg" type="image/svg">
+	<title>My S*cr*t Text</title>
+</head>
 
-					<div class="main__input__warning">
-						<div id="main__input__warning__icon" title="não é permitido acentuação, cedilha ou outros caracteres especiais, apenas letras minúsculas">!</div>
-						<p id="main__input__warning__text">
-							Letras minúsculas e sem símbolos
-						</p>
-					</div>
+<body>
+	<header>
+		<a class="header__link" href="index.html">
+			<img class="header__link__logo" src="./assets/logo.svg" alt="logo do My Secret Text" />
+		</a>
+	</header>
 
-					<div class="main__input__buttons">
-						<button onclick="handleEncrypt()">Criptografar</button>
-						<button onclick="handleDecrypt()">Descriptografar</button>
-					</div>
+	<main>
+		<div class="container">
+			<div class="textbox">
+				<div class="textbox__input">
+					<span>ENTRADA</span>
+					<button class="textbox__clear clear__input" title="Limpar texto" onclick="handleClearInput()">
+						X
+					</button>
+					<textarea title="Você deve digitar o texto aqui" id="textarea__input" placeholder="Digite seu texto aqui" spellcheck="false"></textarea>
 				</div>
 
-				<div class="main__output">
-					<textarea
-						readonly
-						id="main__output__text"
-						placeholder="Não há nada aqui ainda"
-						spellcheck="false"
-					></textarea>
-					<button id="copy-button-output" onclick="handleCopyOutput()">Copiar</button>
+				<div class="textbox__warning">
+					<div class="textbox__warning__icon"
+						title="Caracteres especiais serão removidos automaticamente, letras maiúsculas são transformadas em minúsculas para evitar erros na conversão">
+						!
+					</div>
+					<p class="textbox__warning__text">Letras minúsculas e sem símbolos</p>
+				</div>
+
+				<div class="textbox__buttons">
+					<button title="Botão para criptografar texto" onclick="handleEncrypt()">Criptografar</button>
+					<button title="Botão para descriptografar texto" onclick="handleDecrypt()">Descriptografar</button>
+					<button title="Botão para copiar texto da entrada" id="textbox__input__copy" onclick="handleCopyInput()">
+						Copiar
+					</button>
 				</div>
 			</div>
-		</main>
 
-		<footer class="footer">
-			<p>
-				Desenvolvido por
-				<a
-					class="rodape__texto__link"
-					href="https://github.com/weessm"
-					target="_blank"
-				>
-					<strong>Weslei Miranda</strong>
-				</a>
-			</p>
-		</footer>
+			<div class="textbox">
+				<div class="textbox__output">
+					<span>SAÍDA</span>
+					<button class="textbox__clear clear__output" title="Limpar texto" onclick="handleClearOutput()">
+						X
+					</button>
+					<textarea title="Área para apresentar o resultado da conversão do texto" id="textarea__output" placeholder="Não há nada aqui ainda" spellcheck="false" readonly></textarea>
+				</div>
 
-		<script src="script.js"></script>
-	</body>
+				<div class="textbox__buttons textbox__buttons__output">
+					<button title="Botão para copiar texto da saída" id="textbox__output__copy" onclick="handleCopyOutput()">
+						Copiar
+					</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<p>
+			&copy; Desenvolvido por
+			<a class="rodape__texto__link" href="https://www.linkedin.com/in/wsmiranda/" target="_blank">
+				<strong>Weslei Miranda</strong>
+			</a>
+		</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
 </html>
