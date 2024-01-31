@@ -25,3 +25,11 @@ Confira a aplicação [aqui](https://weessm.github.io/my-secret-text/).
 ![HTML](https://img.shields.io/badge/HTML-5-orange?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-3-blue?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=flat-square&logo=javascript&logoColor=white)
+
+</br>
+</br>
+<div align='center'>
+  <h2>Badge de Conclusão do Desafio</h2>
+  <img src='https://github.com/weessm/my-secret-text/assets/56746413/5fb6f09e-2471-4cb4-acc9-f2a98e715c7b' alt='Badge de Conclusão do Desafio'>
+</div>
+
